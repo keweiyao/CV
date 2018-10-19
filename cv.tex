@@ -23,20 +23,31 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
 
 \name{Weiyao Ke} % Your name
-\address{Duke University, Department of Physics}
-\address{Physics Bldg., Science Dr., Box 90305  Durham, NC 27708, United States} % Your address
-\address{ wk42@phy.duke.edu \\ webhome.phy.duke.edu/$\sim$wk42} % Your phone number and email
+\address{wk42@phy.duke.edu \\ \href{https://webhome.phy.duke.edu/~wk42}{https://webhome.phy.duke.edu/$\sim$wk42}} % Your phone number and email
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Interest}
+\vspace{.3em}
+\begin{Article}
+\item Transport theory of the hot and dense QCD matter.
+\vspace{.3em}
+\item Monte Carlo simulations of partonic transport and the treatment of coherence effects.
+\vspace{.3em}
+\item Computer modeling of the dynamics of ultra-relativistic heavy-ion collisions.
+\vspace{.3em}
+\item Application of machine learning and Bayesian techniques to nuclear physics.
+\vspace{.3em}
+\item Phenomenology models of QCD phase transition.
+\end{Article}
+%------------------------------------------------
+\end{rSection}
+
 
 \begin{rSection}{Education}
-
 {\bf Duke University} \hfill {\em August 2014 - present} \\ 
 Physics, PhD candidate \\
 Supervisor: Prof. Steffen A. Bass
@@ -44,64 +55,65 @@ Supervisor: Prof. Steffen A. Bass
 {\bf Peking University} \hfill {\em September 2010 - June 2014} \\ 
 B.S. in Physics \\
 Supervisor: Prof. Yuxin Liu \\
-Thesis: { \it QCD Phase Transitions in Phenomenology Models. }
-
+Thesis: {\it QCD Phase Transitions in Phenomenology Models. }
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Research projects}
-
-\begin{rSubsection}{Duke University}{2014 - Present}{Hot and dense QCD medium}{Durham, NC}
-\item The development of a diffusion plus linear Boltzmann equation transport model for heavy quark propagation inside a quark-gluon plasma.
-\item The development of 3D initial condition model for event-by-event simulation of relativistic heavy-ion collisions.
-\item Model-to-data comparison using Bayesian methodology and model parameters inference.
-\item Correlation of hard particle production vertices and medium hot-spots in heavy quark transport model.
-
-%------------------------------------------------
-
-\end{rSubsection}
-\begin{rSubsection}{Peking University}{2012 - 2014}{Undergraduate study}{Beijing, China}
-\item Study of QCD phase transitions using Nambu-Jona-Lasinio model and Polyakov loop improved Nambu-Jona-Lasinio model.
-\item Computational study of high spin state nuclei.
-\end{rSubsection}
-
-%------------------------------------------------
+\begin{rSection}{Publications}
+\vspace{.3em}
+\begin{Article}
+\item Weiyao Ke, Yingru Xu, and Steffen A. Bass {\it Modeling of quantum-coherence effects in parton radiative energy loss}, arXiv:1810.08177.
+\vspace{.3em}
+\item Weiyao Ke, Yingru Xu, and Steffen A. Bass {\it A linearized Boltzmann-Langevin transport model for heavy quark transport in hot and dense QCD matter}, arXiv:1806.08848 (submitted to Physics Review C).
+\vspace{.3em}
+\item Weiyao Ke, J. Scott Moreland, Jonah E. Bernhard, and Steffen A. Bass {\it Constraints on rapidity-dependent initial conditions from charged-particle pseudorapidity densities and two-particle correlations}, Phys. Rev. C {\bf 96}, 044912 (2017).
+\vspace{.3em}
+\item Weiyao Ke and Yu-xin Liu, {\it Interfact Tension and Interface Entropy in the 2+1 Flavor Nambu--Jona-Lasinio Model}, Phys. Rev. D {\bf 89}, 074041 (2014).
+\end{Article}
 \end{rSection}
 
 
-\begin{rSection}{Conference}
+\begin{rSection}{Collaboration Publications}
+\vspace{.3em}
+\begin{Article}
+\item Shanshan Cao {\it et al}, {\it Towards the extraction of heavy-quark transport coefficients in quark-gluon plasma}, arXiv:1809.07894.
+\end{Article}
+\end{rSection}
 
-\begin{rSubsection}{APS Fall Meeting of the division of Nuclear Physics 2017}{Oct 25 - Oct 28, 2017}{Presentation}{Pittsburgh, USA}
-\item Weiyao Ke, J. Scott Moreland, Jonah E. Bernhard and Steffen A. Bass {\it Constrain initial 3D entropy production in relativistic heavy-ion collisions at the LHC}.
-\end{rSubsection}
 
-\begin{rSubsection}{Quark Matter 2017}{Feb 6 - Feb 11, 2015}{Poster presentation}{Chicago, USA}
-\item Weiyao Ke, J. Scott Moreland, Jonah E. Bernhard and Steffen A. Bass {\it Constraints on 3D hydro initial conditions from experimental data and systematic predictions of longitudinal observables}.
-\end{rSubsection}
+\begin{rSection}{Conference Presentations and Proceedings}
+\begin{Conference}{Hard Probes 2018}{Aix-les-Bains, Fracne}
+\item \underline{Weiyao Ke}*, Yingru Xu, and Steffen Bass, {\it $\hat{q}$ analysis in a hybrid Boltzmann-Langevin approach with an improved LPM treatment}. 
+\end{Conference}
 
-\begin{rSubsection}{Hard Probes 2016}{Sep 23 - Sep 27, 2015}{Poster presentation and flash talk}{Wuhan, China}
-\item Weiyao Ke, J. Scott Moreland, Jonah E. Bernhard and Steffen A. Bass {\it Constraints on rapidity-dependent initial conditions from charged particle pseudorapidity densities and two-particle correlations at LHC}.
-\end{rSubsection}
+\begin{Conference}{Quark Matter 2018}{Lido, Italy}
+\item \underline{Weiyao Ke}*, Yingru Xu, and Steffen Bass, {\it A hybrid transport model of heavy quark evolution in a QGP medium}, poster presentation.
+\item Xiaojun Yao*, \underline{Weiyao Ke}, Yingru Xu, Steffen Bass, and Berndt M\"uller, {\it Quarkonium production in heavy-ion collisions: coupled Boltzmann transport equations}, arXiv:1807.06199. 
+\end{Conference}
 
-\begin{rSubsection}{Quark Matter 2015}{Sep 27 - Oct 3, 2015}{Poster presentation}{Kobe, Japan}
-\item Weiyao Ke, J. Scott Moreland, Shanshan Cao and Steffen A. Bass {\it Sensitivity of Heavy Quark Observables to Event Geometries in Pb + Pb Collisions}.
-\end{rSubsection}
+\begin{Conference}{APS Fall Meeting of the division of Nuclear Physics 2017}{Pittsburgh, USA}
+\item \underline{Weiyao Ke}*, J. Scott Moreland, Jonah Bernhard, and Steffen Bass, {\it Constraints on rapidity-dependent initial conditions from charged particle pseudorapidity densities and correlations at the LHC}, Nuclear and Particle Physics Proceedings 289, 483-486.
+\end{Conference}
 
-\begin{rSubsection}{Hard Probes 2015}{Jun 29 - Jul 3, 2015}{Poster presentation}{Montr\'eal, Canada}
-\item Weiyao Ke, J. Scott Moreland and Steffen A. Bass, {\it Heavy Quark Initial Condition Consistent with Soft Matter Production}.
-\end{rSubsection}
+\begin{Conference}{Quark Matter 2017}{Chicago, USA}
+\item {Weiyao Ke}*, J. Scott Moreland, Jonah Bernhard, and Steffen Bass, {\it Constraints on 3D hydro initial conditions from experimental data and systematic predictions of longitudinal observables}, poster presentation.
+\item J. Scott Moreland*, Jonah Bernhard, \underline{Weiyao Ke}, and Steffen Bass, {\it Flow in small and large quark-gluon plasma droplets: the role of nucleon substructure}, Nuclear Physics A 967, 361-364.
+\end{Conference}
+
+\begin{Conference}{Hard Probes 2016}{Wuhan, China}
+\item \underline{Weiyao Ke}*, J. Scott Moreland, Jonah Bernhard, and Steffen Bass, {\it Constraints on rapidity-dependent initial conditions from charged particle pseudorapidity densities and two-particle correlations at LHC}, poster presentation.
+\end{Conference}
+
+\begin{Conference}{Quark Matter 2015}{Kobe, Japan}
+\item \underline{Weiyao Ke}*, J. Scott Moreland, Shanshan Cao, and Steffen Bass, {\it Sensitivity of Heavy Quark Observables to Event Geometries in Pb + Pb Collisions}, poster presentation.
+\end{Conference}
+
+\begin{Conference}{Hard Probes 2015}{Montr\'eal, Canada}
+\item \underline{Weiyao Ke}*, J. Scott Moreland, and Steffen Bass, {\it Heavy Quark Initial Condition Consistent with Soft Matter Production}, poster presentation.
+\item Yingru Xu*, Shanshan Cao, Marlene Nahrgang, \underline{Weiyao Ke}, Guang-You Qin, Jussi Auvinen, and Steffen Bass, {\it Heavy-flavor dynamics in relativistic p-Pb collisions at $\sqrt{s_{NN}}=5.02$ TeV}, Nuclear and Particle Physics Proceedings 276, 225-228.
+\end{Conference}
 
 \end{rSection}
 
-\begin{rSection}{Publication}
-Weiyao Ke, J. Scott Moreland, Jonah E. Bernhard, and Steffen A. Bass {\it Constraints on rapidity-dependent initial conditions from charged-particle pseudorapidity densities and two-particle correlations}, Phys. Rev. C {\bf 96}, 044912 (2017).
-
-Weiyao Ke and Yu-xin Liu, {\it Interfact Tension and Interface Entropy in the 2+1 Flavor Nambu--Jona-Lasinio Model}, Phys. Rev. D {\bf 89}, 074041 (2014).
-
-\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
